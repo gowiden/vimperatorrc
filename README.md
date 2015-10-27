@@ -1,5 +1,4 @@
 # vimperatorrc
-# Author: Todd
 
 https://github.com/gowiden/vimperatorrc/blob/master/vimperatrrc
 
