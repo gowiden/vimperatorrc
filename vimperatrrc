@@ -1,1 +1,69 @@
+" VIMPERATOR CONFIGURATION
+" File: ~/.vimperatorrc
+" Source: github
+" Author: Todd <https://about.me/vimer>
+" Sources used:
+" https://github.com/gowiden/vimperatorrc/blob/master/vimperatrrc
+
+"3.10.1 (created: 2015/08/25 00:11:59)
+
+source! /home/op/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+
+" variables
+" this must be set before map operation, otherwise use default value.
+let mapleader=','
+
+" title bar
+set titlestring="Iceweasel Vimperator"
+
+cnoremap<S-Return> <End>.org<Home><C-Right>www.<CR>
+cnoremap<C-Return> <End>.com<Home><C-Right>www.<CR>
+
+" a max number of listing items
+set maxitems=6
+
+" show tabbar only
+set gui=none,tabs,addons
+map <F2> :set gui=invmenu<Return>
+map <F3> :set gui=invnavigation<Return>
+map <F4> :set gui=invaddons<Return>
+
+" tab operation
+noremap q gT
+noremap w gt
+noremap <C-p> :tabmove! -1<CR>
+noremap <C-n> :tabmove! +1<CR>
+
+" colorscheme
+colorscheme indigo
+
+" finish
+echo "hello world!"
+
+noremap y Y
+noremap Y y
+
+set editor=gvim\ -f
+set editor=urxvt\ -e\ vim
+
+nnoremap <silent> f :silent !fcitx-remote -c<CR>f
+nnoremap <silent> F :silent !fcitx-remote -c<CR>F
+nnoremap <silent> : :silent !fcitx-remote -c<CR>:
+
+noremap tw :tabopen https://wx.qq.com<CR>
+noremap ta :tabopen https://appengine.google.com/<CR>
+noremap tm :tabopen https://mail.google.com/<CR>
+noremap tg :tabopen https://plus.google.com/<CR>
+noremap tq :tabopen https://groups.google.com/<CR>
+noremap tp :tabopen https://picasaweb.google.com/<CR>
+noremap tb :tabopen https://pan.baidu.com<CR>
+noremap tl :tabopen outlook.com<CR>
+noremap tr :tabopen https://translate.google.com/#auto/zh-CN/<CR>
+noremap ts :tabopen https://www.google.com/ncr<CR>
+
+let autochanger_proxy_settings = "[{ name:'disable', usage: 'direct connection', proxy:{type:0} },{ name:'socks', usage: 'ssh tunnel', proxy:{type:1,socks:'localhost',socks_port:9999,no_proxies_on:'localhost,127.0.0.1',}}]"
+
+let autochanger_proxy_enabled="true"
 
