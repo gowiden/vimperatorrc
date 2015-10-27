@@ -1,5 +1,7 @@
 # vimperatorrc
 
+My vimperatorrc config.
+
 https://github.com/gowiden/vimperatorrc/blob/master/vimperatrrc
 
 # Donation
