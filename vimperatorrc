@@ -22,6 +22,7 @@ cnoremap<C-Return> <End>.com<Home><C-Right>www.<CR>
 " a max number of listing items
 set maxitems=6
 
+" keymap
 map A <Nop>
 map a <Nop>
 map <C-o> <Nop>
