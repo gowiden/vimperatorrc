@@ -4,7 +4,7 @@
 " Author: Todd <https://about.me/vimer>
 " Sources used:
 " https://github.com/gowiden/vimperatorrc/blob/master/vimperatorrc
-"3.10.1 (created: 2015/08/25 00:11:59)
+" 3.10.1 (created: 2015/08/25 00:11:59)
 
 source! /home/Todd/.vimperatorrc.local
 
@@ -15,7 +15,7 @@ let mapleader=','
 " title bar
 set titlestring="Iceweasel Vimperator"
 
-“surround com and net -> <CTRL>+<ENTER> -> .com/.net
+“ surround com and net -> <CTRL>+<ENTER> -> .com/.net
 cnoremap<S-Return> <End>.org<Home><C-Right>www.<CR>
 cnoremap<C-Return> <End>.com<Home><C-Right>www.<CR>
 
