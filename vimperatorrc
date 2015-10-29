@@ -4,12 +4,9 @@
 " Author: Todd <https://about.me/vimer>
 " Sources used:
 " https://github.com/gowiden/vimperatorrc/blob/master/vimperatorrc
-
 "3.10.1 (created: 2015/08/25 00:11:59)
 
 source! /home/Todd/.vimperatorrc.local
-
-" vim: set ft=vimperator:
 
 " variables
 " this must be set before map operation, otherwise use default value.
@@ -18,11 +15,22 @@ let mapleader=','
 " title bar
 set titlestring="Iceweasel Vimperator"
 
+ “surround com and net -> <CTRL>+<ENTER> -> .com/.net
 cnoremap<S-Return> <End>.org<Home><C-Right>www.<CR>
 cnoremap<C-Return> <End>.com<Home><C-Right>www.<CR>
 
 " a max number of listing items
 set maxitems=6
+
+map A <Nop>
+map a <Nop>
+map <C-o> <Nop>
+map <C-i> <Nop>
+
+noremap H <C-o>
+noremap L <C-i>
+noremap c <C-o>
+noremap v <C-i>
 
 " show tabbar only
 set gui=none,tabs,addons
@@ -66,3 +74,8 @@ noremap ts :tabopen https://www.google.com/ncr<CR>
 let autochanger_proxy_settings = "[{ name:'disable', usage: 'direct connection', proxy:{type:0} },{ name:'socks', usage: 'ssh tunnel', proxy:{type:1,socks:'localhost',socks_port:9999,no_proxies_on:'localhost,127.0.0.1',}}]"
 
 let autochanger_proxy_enabled="true"
+
+nnoremap <C-A-p> :proxy socks<CR>
+nnoremap <C-A-d> :proxy disable<CR>
+
+" vim: set ft=vimperator:
