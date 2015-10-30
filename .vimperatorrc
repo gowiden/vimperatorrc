@@ -1,8 +1,8 @@
-"3.10.1 (created: 2015/08/25 00:41:59)
+" 3.10.1 (created: 2015/08/25 00:41:59)
 " File: ~/.vimperatorrc
 " Source: github
 " Author: Todd <https://about.me/vimer>
-" Sources used: https://github.com/gowiden/vimperatorrc/blob/master/vimperatorrc
+" Sources used: https://github.com/gowiden/vimperatorrc/blob/master/.vimperatorrc
 
 " variables
 " this must be set before map operation, otherwise use default value.
@@ -61,7 +61,6 @@ nnoremap <silent> : :silent !fcitx-remote -c<CR>:
 " shortcuts open URL
 noremap tv :tabopen about.me/vimer<CR>
 noremap tw :tabopen wx.qq.com<CR>
-noremap ti :tabopen https://twitter.com/gowiden<CR>
 noremap ta :tabopen https://appengine.google.com/<CR>
 noremap tm :tabopen https://mail.google.com/<CR>
 noremap tg :tabopen https://plus.google.com/<CR>
@@ -72,9 +71,7 @@ noremap tb :tabopen https://pan.baidu.com<CR>
 noremap tl :tabopen outlook.com<CR>
 noremap tr :tabopen https://translate.google.com/#auto/zh-CN/<CR>
 noremap ts :tabopen https://www.google.com/ncr<CR>
-"noremap ti :tabopen weibo.com/gowiden<CR>
-"noremap ti :tabopen instagram.com/gowiden<CR>
 
-source! /home/sysop/.vimperatorrc.local
+source! /home/Todd/.vimperatorrc.local
 
 " vim: set ft=vimperator:
