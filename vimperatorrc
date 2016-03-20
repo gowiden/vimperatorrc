@@ -1,4 +1,4 @@
-" 3.10.1 (created: 2015/08/25 00:41:59)
+"3.12.0 (created: 2016/02/28 22:07:56)
 " File: ~/.vimperatorrc
 " Source: github
 " Author: Todd <https://about.me/vimer>
@@ -91,4 +91,5 @@ noremap ts :tabopen https://www.google.com/ncr<CR>
 noremap tw :tabopen https://wx.qq.com<CR>
 
 source! /home/sysop/.vimperatorrc.local
+
 " vim: set ft=vimperator:
