@@ -15,7 +15,7 @@ cp ~/.vimperatorrc ~/.vimperatorrc_bak
 
 recommend
 ```
-curl https://raw.githubusercontent.com/gowiden/vimperatorrc/master/.vimperatorrc > ~/.vimrc
+curl https://raw.githubusercontent.com/gowiden/vimperatorrc/master/vimperatorrc > ~/.vimrc
 ```
 or  use git
 
